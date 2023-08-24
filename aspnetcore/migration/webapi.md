@@ -5,7 +5,6 @@ description: Learn how to migrate a web API implementation from ASP.NET 4.x Web 
 ms.author: scaddie
 ms.custom: mvc
 ms.date: 01/31/2022
-no-loc: [".NET MAUI", "Mac Catalyst", "Blazor Hybrid", Home, Privacy, Kestrel, appsettings.json, "ASP.NET Core Identity", cookie, Cookie, Blazor, "Blazor Server", "Blazor WebAssembly", "Identity", "Let's Encrypt", Razor, SignalR]
 uid: migration/webapi
 ---
 # Migrate from ASP.NET Web API to ASP.NET Core
@@ -133,7 +132,7 @@ The preceding highlighted code changes the following, to migrate to ASP.NET Core
 * Sets the root namespace to `ProductsCore`.
 * Changes `ApiController` to <xref:Microsoft.AspNetCore.Mvc.ControllerBase>.
 * Adds `using Microsoft.AspNetCore.Mvc;` to resolve the `ControllerBase` reference.
-* Changes the `GetProduct` action's return type from `IHttpActionResult` to `ActionResult<Product>`. For more info, see [Controller action return types](/aspnet/web-api/action-return-types).
+* Changes the `GetProduct` action's return type from `IHttpActionResult` to `ActionResult<Product>`. For more info, see [Controller action return types](/aspnet/core/web-api/action-return-types).
 * Simplifies the `GetProduct` action's `return` statement to the following statement:
 
     ```csharp
